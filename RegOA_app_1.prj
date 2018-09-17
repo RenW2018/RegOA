@@ -1,0 +1,136 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="/Users/wuweiren/Documents/MATLAB/RegOA/v_online/RegOA_app_1.prj" location="/Users/wuweiren/Documents/MATLAB/RegOA/v_online" name="RegOA_app_1" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>RegOA_app_1</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>/RegOA_app_1/</param.installpath.string>
+    <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes>In the following directions, replace MR/v94 by the directory on the target machine where MATLAB is installed, or MR by the directory where the MATLAB Runtime is installed.
+
+If the environment variable DYLD_LIBRARY_PATH is undefined, set it to the following string:
+
+MR/v94/runtime/maci64:MR/v94/sys/os/maci64:MR/v94/bin/maci64
+
+If it is defined, set it to the following:
+
+${DYLD_LIBRARY_PATH}:MR/v94/runtime/maci64:MR/v94/sys/os/maci64:MR/v94/bin/maci64</param.target.install.notes>
+    <param.intermediate>${PROJECT_ROOT}/RegOA_app_1/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/RegOA_app_1/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/RegOA_app_1/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/RegOA_app_1</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+      <param.help.text />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/RegOA_app.mlapp</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/RegOA.m</file>
+      <file>${PROJECT_ROOT}/configRegOA_1.m</file>
+      <file>${PROJECT_ROOT}/imshow3Dfull_color.m</file>
+      <file>${PROJECT_ROOT}/outputRegOA_1.m</file>
+      <file>${PROJECT_ROOT}/prepMRIRegOA_1.m</file>
+      <file>${PROJECT_ROOT}/prepMSOTRegOA_1.m</file>
+      <file>${PROJECT_ROOT}/readMRIRegOA_1.m</file>
+      <file>${PROJECT_ROOT}/readMSOTRegOA_1.m</file>
+      <file>${PROJECT_ROOT}/registRegOA_1.m</file>
+      <file>${PROJECT_ROOT}/segment_snakes.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/RegOA_app_1/for_testing" name="readme.txt" optional="true">/Users/wuweiren/Documents/MATLAB/RegOA/v_online/RegOA_app_1/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/RegOA_app_1/for_testing" name="RegOA_app_1.app" optional="false">/Users/wuweiren/Documents/MATLAB/RegOA/v_online/RegOA_app_1/for_testing/RegOA_app_1.app</file>
+      <file location="${PROJECT_ROOT}/RegOA_app_1/for_testing" name="run_RegOA_app_1.sh" optional="false">/Users/wuweiren/Documents/MATLAB/RegOA/v_online/RegOA_app_1/for_testing/run_RegOA_app_1.sh</file>
+      <file location="${PROJECT_ROOT}/RegOA_app_1/for_testing" name="splash.png" optional="false">/Users/wuweiren/Documents/MATLAB/RegOA/v_online/RegOA_app_1/for_testing/splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2018a.app</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.13.5</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
